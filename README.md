@@ -1,5 +1,14 @@
 ###################################################################
 #                                                                 #
+#                 Winton Local Repositiory for PRSF               #
+#                                                                 #
+###################################################################
+This repository was forked from https://github.com/vogechri/PRSM.
+I just made some slight changes to get it running on my computer.
+TO run, follow instructions below and place kitti dataset at ../kitti/
+relative to the root of this repository. Requires MATLAB.
+###################################################################
+#                                                                 #
 #                 Piecewise Rigid Scene Flow                      #
 #                                                                 #
 ###################################################################

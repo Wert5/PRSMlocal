@@ -5,10 +5,10 @@ function fullResult= evalSceneFlowKittiFolder ( )
 compareGT = 0;
 numList = 0:193;
 
-folder2 = '../test1/';
-folder1 = '../test2/';
+folder2 = './kittiRes/';
+folder1 = './kittiRes/';
 
-doDifference = 2;
+doDifference = 0;
 
 % disable certain images:
 %  [a,b] = find(numList == 0);numList(b) = [];

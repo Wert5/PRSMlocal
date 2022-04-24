@@ -39,7 +39,7 @@ storeOutput = 1; % store the output as flow/stereo files in the folder: storeFol
 % folder with image data to read from -- ausmes certain structure
 %dataFolder =  '../../../Desktop/work/data/';
 %dataFolder = '../../data/data_stereo_flow/';
-dataFolder =  '../kittidata/'; % local folder -- just a few images added for testing
+dataFolder =  '../../kitti/stereo2012/'; % local folder -- just a few images added for testing
 
 p.subImg  = 10; % the frame number to proces, eg 10 -> pics 9 (if 3-frame version)
 % 10 and 11 are loaded. To suppress the camera motion, eg. from a stereo
@@ -61,7 +61,7 @@ p.sFolder      = p.storeFolder;
 pFolder = './props/'; % store generated proposals here and reuse 
 % formerly used to save paramters and misc. info about run
 
-p.use3Frames   = true; % well use 3 not 2 frames -- assume pics loaded in ref/cam structure
+p.use3Frames   = false; % well use 3 not 2 frames -- assume pics loaded in ref/cam structure
 p.usePrevProps = true; % use proposals from the previous time step -> loaded from tempFolder
 % the procedure falls back to the standard 2 frame procedure in case there
 % is no video data available

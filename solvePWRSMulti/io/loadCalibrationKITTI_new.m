@@ -16,7 +16,6 @@ if fid<0
 end
 res = fscanf(fid, 'P0: %f %f %f %f %f %f %f %f %f %f %f %f \nP1: %f %f %f %f %f %f %f %f %f %f %f %f');
 fclose(fid);
-
 calib.P_rect{1} = reshape(res(1:12), [4,3])';
 calib.P_rect{2} = reshape(res(13:24), [4,3])';
 

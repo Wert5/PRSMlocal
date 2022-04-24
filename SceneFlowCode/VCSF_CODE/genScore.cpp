@@ -605,7 +605,7 @@ void genScore<Scalar>::
   const int dy2[24] = { -2, -1,  0,  1,  2, -2, -1,  0,  1,  2, -2, -1, 1, 2, -2, -1,  0,  1,  2, -2, -1,  0,  1,  2 };
   const int dx2[24] = { -2, -2, -2, -2, -2, -1, -1, -1, -1, -1,  0,  0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2};
 
-  short Repsi[3] = {163, 64, 0.};
+  short Repsi[3] = {163, 64, 0};
   int cSize = ((2*csize+1)*(2*csize+1)-1)/2;// 24;//dxyC.size();
   Scalar dtaPen (thresh*2./Scalar(cSize));
 
